@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #0d6efd;
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #6610f2;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -4000,7 +4000,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #212529;
 }
 
 .nav-fill > .nav-link,
@@ -7356,7 +7356,7 @@ textarea.form-control-lg {
   margin-right: auto !important;
 }
 
-.mb-0 {
+.\ {
   margin-bottom: 0 !important;
 }
 
@@ -7804,6 +7804,10 @@ textarea.form-control-lg {
 
 .text-opacity-100 {
   --bs-text-opacity: 1;
+}
+
+.bg-l-black {
+  background-color: #000814;
 }
 
 .bg-primary {
@@ -11369,13 +11373,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #212529;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #212529;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11397,11 +11401,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #212529;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #212529;
   }
 
   #mainNav.navbar-shrink {
@@ -11472,7 +11476,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(33, 37, 41, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11500,10 +11504,10 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: #000814;
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: #000814;
 }
