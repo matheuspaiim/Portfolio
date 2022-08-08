@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-1-17htn1@7k3#bj61o*%$pmy^#)4o@o%q0r^k#lh8t@szb^ya9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://matheusportfolio.herokuapp.com']
+ALLOWED_HOSTS = ['matheusportfolio.herokuapp.com']
 
 
 # Application definition
@@ -133,7 +133,7 @@ if os.getcwd() == '/app':
     #Honor the 'X-forwarded-photo' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FOWARDED_PHOTO', 'https')
     #Allow all host headers
-    ALLOWED_HOSTS = ['https://matheusportfolio.herokuapp.com']
+    ALLOWED_HOSTS = ['matheusportfolio.herokuapp.com']
     DEBUG = True
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
