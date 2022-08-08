@@ -7806,8 +7806,17 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-l-black {
-  background-color: #000814;
+.bg-black-light {
+  background-color: #d9434f;
+
+}
+
+.bg-gray {
+  background-color: #000706;
+}
+
+.bg-gray-light {
+  background-color: #495057;
 }
 
 .bg-primary {
@@ -11504,10 +11513,9 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #000814;
   color: #fff;
 }
 
 .copyright {
-  background-color: #000814;
+  background-color: #0A0A0A;
 }
