@@ -1,1 +1,1 @@
-web: gunuicorn Portfolio.wsgi -- logfile -
+web: gunicorn Portfolio.wsgi -- logfile -
