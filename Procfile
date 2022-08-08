@@ -1,1 +1,1 @@
-web: gunicorn Portfolio:matheusportfolio --log-file -
+web: gunicorn Portfolio.wsgi --log-file -
