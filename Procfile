@@ -1,1 +1,1 @@
-web: gunicorn matheusportfolio:app --log-file -
+web: gunicorn Portfolio:app --log-file -
