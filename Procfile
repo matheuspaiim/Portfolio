@@ -1,0 +1,1 @@
+web: gunuicorn Portfolio.wsgi -- logfile -
