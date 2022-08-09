@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,7 +43,7 @@
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="{% static 'assets/img/image.png' %}" alt="Foto Perfil" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Matheus Paim</h1>
+                <h1 class="animate__animated animate__fadeInRight masthead-heading text-uppercase mb-0">Matheus Paim</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -50,24 +51,25 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Desenvolvedor Web - Back-end - Python</p>
+                <p class="animate__animated animate__fadeInUp masthead-subheading font-weight-light mb-0">Desenvolvedor Web - Back-end - Python</p>
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section bg-black-light portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0 ">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 reveal">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -76,7 +78,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 reveal">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -85,7 +87,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5 reveal">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -100,7 +102,7 @@
         <section class="page-section bg-gray text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white ">Sobre</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -113,7 +115,7 @@
                     <div class="col-lg-4 me-auto"><p class="lead">Sou formado em Desenvolvimento de Sistemas pelo SENAI, e tenho certificado de inglês fluente pela <a href="https://www.efset.org/cert/fA86ky">EF SET</a>.</p></div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
+                <div class="text-center mt-4 reveal">
                     <a class="btn btn-xl btn-outline-light" href="https://github.com/matheuspaiim">
                         <i class="fab fa-fw fa-github"></i>
                         GitHub
@@ -195,7 +197,7 @@
                 <div class="row justify-content-center">
 
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0 reveal">
                         <h4 class="text-uppercase mb-4">Redes sociais</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="mailto:matheuspaim.ds@gmail.com"><i class="fa-solid fa-square-envelope"></i>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/matheuspaiim"><i class="fab fa-fw fa-github"></i></a>
@@ -295,7 +297,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/dashboard.png' %}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Painel financeiro pessoal feito em Python e Django. O projeto ainda está no começo do seu desnvolvimento, portanto ainda não está funcional. <br> Link do projeto: <a href="https://personalfinance-dashboard.herokuapp.com">https://personalfinance-dashboard.herokuapp.com</a> <br> Código:<a href="https://github.com/matheuspaiim/Finance_Dashboard">https://github.com/matheuspaiim/Finance_Dashboard</a></p>
+                                    <p class="mb-4">Painel financeiro pessoal feito em Python e Django. O projeto ainda está no começo do seu desnvolvimento, portanto ainda não está funcional. <br> Link do projeto: <a href="https://personalfinance-dashboard.herokuapp.com">https://personalfinance-dashboard.herokuapp.com</a> <br> Código: <a href="https://github.com/matheuspaiim/Finance_Dashboard">https://github.com/matheuspaiim/Finance_Dashboard</a></p>
                                     <button class="btn btn-secondary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Fechar
