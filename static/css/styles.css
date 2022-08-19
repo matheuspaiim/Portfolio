@@ -1165,7 +1165,10 @@ progress {
     flex: 0 0 auto;
     width: 25%;
   }
-
+  .blob {
+    width: 35%;
+    display: none;
+  }
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -11532,3 +11535,4 @@ html {
   transform: translateY(0);
   opacity: 1;
 }
+
