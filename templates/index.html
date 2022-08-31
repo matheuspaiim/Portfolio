@@ -2,322 +2,393 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Matheus Paim</title>
-        <link rel="icon" href="/static/assets/img/gamer2.png">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Matheus Paim</title>
+    <link rel="icon" href="/static/assets/img/gamer2.png">
 
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg gradient text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img class="mx-3" src="{% static 'assets/img/gamer1.png' %}" alt="..." />Web developer</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-gray text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-gray text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <img class="blob" src="/static/assets/img/blob.svg"
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar avatar mb-5" src="{% static 'assets/img/image.png' %}" alt="Foto Perfil" />
-                <!-- Masthead Heading-->
-                <h1 class="animate__animated animate__fadeInRight masthead-heading text-uppercase mb-0">Matheus Paim</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="animate__animated animate__fadeInUp masthead-subheading font-weight-light mb-0">Desenvolvedor Web - Python</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section gradient portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0 ">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="page-top">
 
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5 reveal">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/tictactoe.jpeg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5 reveal">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/commerce1.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5 reveal">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/finance.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-gray text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white ">Sobre</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Desenvolvedor web, programador Python. Melhorando as minhas habilidades todos os dias para estar aperfeiçoando meus projetos e desenvolvendo com mais eficiência ao decorrer da minha carreira. </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Sou formado em Desenvolvimento de Sistemas pelo SENAI, e tenho certificado de inglês fluente pela <a href="https://www.efset.org/cert/fA86ky">EF SET</a>.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4 reveal">
-                    <a class="btn btn-xl btn-outline-light" href="https://github.com/matheuspaiim">
-                        <i class="fab fa-fw fa-github"></i>
-                        GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section gradient" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Entre em contato</h2>
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
 
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form action="mailto:matheuspaim.ds@gmail.com" method="POST" enctype="text/plain" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nome</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">É necessário colocar seu nome.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Endereço de Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Preencher endereço de email.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email não é válido.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Número de telefone</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Preencher número de telefone.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Mensagem</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Preencher campo de mensagem.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Mensagem enviada com sucesso! Retornarei em breve.</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-gray text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0 reveal">
-                        <h4 class="text-uppercase mb-4">Redes sociais</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:matheuspaim.ds@gmail.com"><i class="fa-solid fa-square-envelope"></i>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/matheuspaiim"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/matheuspaim-ds/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://t.me/MatheusPaimds"><i class="fab fa-fw fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright gradient py-4 text-center text-white">
-            <div class="container"><small>2022 © Matheus Paim. Todos os direitos reservados.</small></div>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg gradient text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top"><img class="mx-3" src="{% static 'assets/img/gamer1.png' %}"
+                                                      alt="..."/>Web developer</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-gray text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                                     href="#contact">Contato</a></li>
+            </ul>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jogo da velha</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/Board1.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Jogo da velha em python utilizando programação orientada a objetos. Atualmente possui apenas a dificuldade de jogar contra um amigo, e tem como funcionalidades mostrar o placar, trocar de jogador, reiniciar o jogo e zerar o placar. Estou desenvolvendo as dificuldades fácil e difícil pra jogar contra um bot. <br> Link do projeto: <a href="https://github.com/matheuspaiim/TicTacToeOOP">https://github.com/matheuspaiim/TicTacToeOOP</a> </p>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Fechar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+    </div>
+</nav>
+
+
+<!-- Masthead-->
+<header class="masthead bg-gray text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <img class="blob" src="/static/assets/img/blob.svg"
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar avatar mb-5" src="{% static 'assets/img/image.png' %}" alt="Foto Perfil"/>
+        <!-- Masthead Heading-->
+        <h1 class="animate__animated animate__fadeInRight masthead-heading text-uppercase mb-0">Matheus Paim</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="animate__animated animate__fadeInUp masthead-subheading font-weight-light mb-0">Desenvolvedor Web -
+            Python</p>
+    </div>
+</header>
+<!-- Portfolio Section-->
+<section class="page-section gradient portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white mb-0 ">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5 reveal">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
                     </div>
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/tictactoe.jpeg' %}" alt="..."/>
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5 reveal">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/commerce1.jpg' %}" alt="..."/>
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5 reveal">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/finance.jpg' %}" alt="..."/>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kairos Working</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/Home.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Sistema web desenvolvido em HTML, CSS, JS, PHP e MySQL. Sistema web e-commerce com CRUD acessível na área ADM, para acessar basta utilizar o email 'kairosorking@gmail.com' e a senha 'kairos123'. <br> Link: <a href="https://kairosworking.herokuapp.com">https://kairosworking.herokuapp.com</a> <br> Link código: <a href="https://github.com/matheuspaiim/Kairos.Working">https://github.com/matheuspaiim/Kairos.Working</a></p>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Fechar
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</section>
+<!-- About Section-->
+<section class="page-section bg-gray text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white ">Sobre</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">Desenvolvedor web, programador Python. Melhorando as minhas
+                habilidades todos os dias para estar aperfeiçoando meus projetos e desenvolvendo com mais eficiência ao
+                decorrer da minha carreira. </p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">Sou formado em Desenvolvimento de Sistemas pelo SENAI, e tenho
+                certificado de inglês fluente pela <a href="https://www.efset.org/cert/fA86ky">EF SET</a>.</p></div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4 reveal">
+            <a class="btn btn-xl btn-outline-light" href="https://github.com/matheuspaiim">
+                <i class="fab fa-fw fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section-->
+<section class="page-section gradient" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Entre em contato</h2>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form action="mailto:matheuspaim.ds@gmail.com" method="POST" enctype="text/plain" id="contactForm"
+                      data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                               data-sb-validations="required"/>
+                        <label for="name">Nome</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">É necessário colocar seu nome.
                         </div>
                     </div>
-                </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                               data-sb-validations="required,email"/>
+                        <label for="email">Endereço de Email</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Preencher endereço de email.
+                        </div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email não é válido.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                               data-sb-validations="required"/>
+                        <label for="phone">Número de telefone</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Preencher número de telefone.
+                        </div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                                  style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Mensagem</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Preencher campo de mensagem.
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Mensagem enviada com sucesso! Retornarei em breve.</div>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div>
+                    </div>
+                    <!-- Submit Button-->
+                    <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Enviar</button>
+                </form>
             </div>
         </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Painel Financeiro</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/dashboard.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Painel financeiro pessoal feito em Python e Django. O projeto ainda está no começo do seu desnvolvimento, portanto ainda não está funcional. <br> Link do projeto: <a href="https://personalfinance-dashboard.herokuapp.com">https://personalfinance-dashboard.herokuapp.com</a> <br> Código: <a href="https://github.com/matheuspaiim/Finance_Dashboard">https://github.com/matheuspaiim/Finance_Dashboard</a></p>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Fechar
-                                    </button>
-                                </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer bg-gray text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0 reveal">
+                <h4 class="text-uppercase mb-4">Redes sociais</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:matheuspaim.ds@gmail.com"><i
+                        class="fa-solid fa-square-envelope"></i>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/matheuspaiim"><i
+                            class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/matheuspaim-ds/"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://t.me/MatheusPaimds"><i
+                            class="fab fa-fw fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Copyright Section-->
+<div class="copyright gradient py-4 text-center text-white">
+    <div class="container"><small>2022 © Matheus Paim. Todos os direitos reservados.</small></div>
+</div>
+<!-- Portfolio Modals-->
+<!-- Portfolio Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jogo da velha</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
                             </div>
+                            <!-- Portfolio Modal - Image-->
+                            <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/Board1.png' %}"
+                                 alt="..."/>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-4">Jogo da velha em python utilizando programação orientada a objetos.
+                                Atualmente possui apenas a dificuldade de jogar contra um amigo, e tem como
+                                funcionalidades mostrar o placar, trocar de jogador, reiniciar o jogo e zerar o placar.
+                                Estou desenvolvendo as dificuldades fácil e difícil pra jogar contra um bot. <br> Link
+                                do projeto: <a href="https://github.com/matheuspaiim/TicTacToeOOP">https://github.com/matheuspaiim/TicTacToeOOP</a>
+                            </p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Fechar
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="{% static 'js/scripts.js' %}"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </div>
+</div>
+<!-- Portfolio Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kairos Working</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/Home.png' %}"
+                                 alt="..."/>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-4">Sistema web desenvolvido em HTML, CSS, JS, PHP e MySQL. Sistema web
+                                e-commerce com CRUD acessível na área ADM, para acessar basta utilizar o email
+                                'kairosorking@gmail.com' e a senha 'kairos123'. <br> Link: <a
+                                        href="https://kairosworking.herokuapp.com">https://kairosworking.herokuapp.com</a>
+                                <br> Link código: <a href="https://github.com/matheuspaiim/Kairos.Working">https://github.com/matheuspaiim/Kairos.Working</a>
+                            </p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+     aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Painel Financeiro</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/dashboard.png' %}"
+                                 alt="..."/>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-4">Painel financeiro pessoal feito em Python e Django. O projeto ainda está no
+                                começo do seu desnvolvimento, portanto ainda não está funcional. <br> Link do projeto:
+                                <a href="https://personalfinance-dashboard.herokuapp.com">https://personalfinance-dashboard.herokuapp.com</a>
+                                <br> Código: <a href="https://github.com/matheuspaiim/Finance_Dashboard">https://github.com/matheuspaiim/Finance_Dashboard</a>
+                            </p>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static 'js/scripts.js' %}"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!-- * *                               Stop Loader                               * *-->
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+</body>
 </html>
